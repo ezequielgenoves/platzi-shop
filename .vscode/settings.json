@@ -1,0 +1,9 @@
+{
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Cascadia Code', Menlo, Monaco, monospace",
+  "editor.tabSize": 2,
+  "files.autoSave": "onWindowChange",
+  "prettier.bracketSameLine": true,
+  "prettier.singleQuote": true,
+  "prettier.useTabs": true
+}

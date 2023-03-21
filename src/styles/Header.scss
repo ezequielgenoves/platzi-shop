@@ -66,6 +66,10 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.navbar-shopping-cart:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
 @media (max-width: 640px) {
   .menu {
     display: block;

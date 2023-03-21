@@ -12,26 +12,34 @@ import Checkout from '@pages/Checkout'
 import Orders from '@pages/Orders'
 import NotFound from '@pages/NotFound'
 import '@styles/global.css'
+import AppContext from '@context/AppContext'
+import useInitialState from '@hooks/useInitialState'
 
 const App = () => {
-  console.log('hola app')
+  const initialState = useInitialState()
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route exact path="/" Component={Home} />
-          <Route exact path="/login" Component={Login} />
-          <Route exact path="/password/recovery" Component={PasswordRecovery} />
-          <Route exact path="/send-email" Component={SendEmail} />
-          <Route exact path="/password/new" Component={NewPassword} />
-          <Route exact path="/account" Component={MyAccount} />
-          <Route exact path="/signup" Component={CreateAccount} />
-          <Route exact path="/checkout" Component={Checkout} />
-          <Route exact path="/orders" Component={Orders} />
-          <Route path="*" Component={NotFound} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <AppContext.Provider value={initialState}>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route exact path="/" Component={Home} />
+            <Route exact path="/login" Component={Login} />
+            <Route
+              exact
+              path="/password/recovery"
+              Component={PasswordRecovery}
+            />
+            <Route exact path="/send-email" Component={SendEmail} />
+            <Route exact path="/password/new" Component={NewPassword} />
+            <Route exact path="/account" Component={MyAccount} />
+            <Route exact path="/signup" Component={CreateAccount} />
+            <Route exact path="/checkout" Component={Checkout} />
+            <Route exact path="/orders" Component={Orders} />
+            <Route path="*" Component={NotFound} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </AppContext.Provider>
   )
 }
 
