@@ -1,20 +1,15 @@
 name: Build and Deploy
-on: [push]
+on: 
+  push:
+    branches:
+      - master # change to your main branch
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [15]
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           pnpm install
