@@ -1,9 +1,9 @@
 {
-  "homepage": "https://ezequielgenoves.github.io/platzi-shop/",
   "name": "react-shop",
   "version": "1.0.0",
   "description": "React shop for platzi",
   "main": "src/index.js",
+  "homepage": "https://ezequielgenoves.github.io/platzi-shop/",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "test": "echo \"Error: no test specified\" && exit 1",
