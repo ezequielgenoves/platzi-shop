@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "@styles/ProductItem.scss";
-import addCartBtn from "@icons/bt_add_to_cart.svg";
+import React, { useState } from 'react'
+import '@styles/ProductItem.scss'
+import addCartBtn from '@icons/bt_add_to_cart.svg'
 
 const ProductItem = () => {
   return (
@@ -19,7 +19,7 @@ const ProductItem = () => {
         </figure>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductItem;
+export default ProductItem

@@ -1,6 +1,6 @@
-import React from "react";
-import "@styles/Login.scss";
-import logo from "@logos/logo_yard_sale.svg";
+import React from 'react'
+import '@styles/Login.scss'
+import logo from '@logos/logo_yard_sale.svg'
 
 const Login = () => {
   return (
@@ -36,7 +36,7 @@ const Login = () => {
         <button className="secondary-button signup-button">Sign up</button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

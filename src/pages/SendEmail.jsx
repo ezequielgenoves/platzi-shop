@@ -1,7 +1,7 @@
-import React from "react";
-import "@styles/SendEmail.scss";
-import emailIcon from "@icons/email.svg";
-import logo from "@logos/logo_yard_sale.svg";
+import React from 'react'
+import '@styles/SendEmail.scss'
+import emailIcon from '@icons/email.svg'
+import logo from '@logos/logo_yard_sale.svg'
 const SendEmail = () => {
   return (
     <div className="SendEmail">
@@ -21,7 +21,7 @@ const SendEmail = () => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SendEmail;
+export default SendEmail

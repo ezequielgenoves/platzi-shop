@@ -1,6 +1,6 @@
-import React from "react";
-import "@styles/OrderItem.scss";
-import closeIcon from "@icons/icon_close.png";
+import React from 'react'
+import '@styles/OrderItem.scss'
+import closeIcon from '@icons/icon_close.png'
 
 const OrderItem = () => {
   return (
@@ -15,7 +15,7 @@ const OrderItem = () => {
       <p>$30,00</p>
       <img src={closeIcon} alt="close" />
     </div>
-  );
-};
+  )
+}
 
-export default OrderItem;
+export default OrderItem

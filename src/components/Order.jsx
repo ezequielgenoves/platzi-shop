@@ -1,9 +1,9 @@
-import React from 'react';
-import '@styles/Order.scss';
-import flechaIcon from "@icons/flechita.svg"
+import React from 'react'
+import '@styles/Order.scss'
+import flechaIcon from '@icons/flechita.svg'
 
 const Order = () => {
-	return (
+  return (
     <div className="Order">
       <p>
         <span>03.25.21</span>
@@ -12,7 +12,7 @@ const Order = () => {
       <p>$560.00</p>
       <img src={flechaIcon} alt="arrow" />
     </div>
-  );
+  )
 }
 
-export default Order;
+export default Order

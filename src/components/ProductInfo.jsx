@@ -1,6 +1,6 @@
-import React from "react";
-import "@styles/ProductInfo.scss";
-import addCartBtn from "@icons/bt_add_to_cart.svg";
+import React from 'react'
+import '@styles/ProductInfo.scss'
+import addCartBtn from '@icons/bt_add_to_cart.svg'
 
 const ProductInfo = () => {
   return (
@@ -22,7 +22,7 @@ const ProductInfo = () => {
         </button>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ProductInfo;
+export default ProductInfo
