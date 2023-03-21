@@ -19,7 +19,7 @@ const App = () => {
   const initialState = useInitialState()
   return (
     <AppContext.Provider value={initialState}>
-      <HashRouter basename='/platzi-shop'> 
+      <BrowserRouter basename='/platzi-shop'> 
         <Layout>
           <Routes>
             <Route exact path='/' Component={Home} />
@@ -38,7 +38,7 @@ const App = () => {
             <Route path='*' Component={NotFound} />
           </Routes>
         </Layout>
-      </HashRouter>
+      </BrowserRouter>
     </AppContext.Provider>
   )
 }
