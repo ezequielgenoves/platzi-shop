@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from '@containers/Layout'
 import Home from '@pages/Home'
 import Login from '@pages/Login'
@@ -19,22 +19,18 @@ const App = () => {
   const initialState = useInitialState()
   return (
     <AppContext.Provider value={initialState}>
-      <BrowserRouter basename='/platzi-shop'> 
+      <BrowserRouter>
         <Layout>
           <Routes>
-            <Route exact path='/' Component={Home} />
-            <Route exact path='/login' Component={Login} />
-            <Route
-              exact
-              path='/password/recovery'
-              Component={PasswordRecovery}
-            />
-            <Route exact path='/send-email' Component={SendEmail} />
-            <Route exact path='/password/new' Component={NewPassword} />
-            <Route exact path='/account' Component={MyAccount} />
-            <Route exact path='/signup' Component={CreateAccount} />
-            <Route exact path='/checkout' Component={Checkout} />
-            <Route exact path='/orders' Component={Orders} />
+            <Route path='/' Component={Home} />
+            <Route path='/login' Component={Login} />
+            <Route path='/password/recovery' Component={PasswordRecovery} />
+            <Route path='/send-email' Component={SendEmail} />
+            <Route path='/password/new' Component={NewPassword} />
+            <Route path='/account' Component={MyAccount} />
+            <Route path='/signup' Component={CreateAccount} />
+            <Route path='/checkout' Component={Checkout} />
+            <Route path='/orders' Component={Orders} />
             <Route path='*' Component={NotFound} />
           </Routes>
         </Layout>

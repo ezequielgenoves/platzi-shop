@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 const initialState = {
   cart: [],
+  showOrders: false,
 }
 
 const useInitialState = () => {
@@ -15,12 +16,17 @@ const useInitialState = () => {
   }
 
   const removeFromCart = (payload) => {
-    debugger;
     setState({
       ...state,
       cart: state.cart.filter((item) => item.id !== payload.id),
     })
   }
-  return { state, addToCart, removeFromCart }
+  const toggleOrderView = () => {
+    setState({
+      ...state,
+      showOrders: !state.showOrders,
+    })
+  }
+  return { state, addToCart, removeFromCart, toggleOrderView }
 }
 export default useInitialState
